@@ -1,62 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>W3Schools Clone</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet" />
+
+
 </head>
 <body>
+  <!-- Navigation Bar Starts -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="uploads/logo.png" width="50" height="50" alt="logo" />
+    </a>
 
-    <nav class="navbar navbar-expand navbar-dark bg-dark" id="mainNavbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">W3Schools</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <button class="btn btn-secondary" id="themeToggle">🌙 Dark</button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">References</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Exercises</a></li>
-            </ul>
-            <button class="btn btn-success">Sign Up</button>
-          </div>
+    <!-- Toggle button for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </div>
-      </nav>
-      <section class="text-center bg-light py-5">
-        <div class="container">
-          <h1 class="display-4">Learn to Code</h1>
-          <p class="lead">With the world's largest web developer site.</p>
-        </div>
-        <div class="container w-50">
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Search...">
-    <button class="btn btn-primary" type="button">Search</button>
-  </div>
-</div>
-      </section>
-      <section class="container my-5">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card text-white bg-success">
-              <div class="card-body">
-                <h5 class="card-title">HTML</h5>
-                <p class="card-text">Learn the basics of HTML.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Repeat for CSS, JavaScript, Python, etc. -->
-        </div>
-      </section>
-      <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 W3Schools Clone. All rights reserved.</p>
-      </footer>
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <!-- Left Links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Menu <i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tutorials <i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Exercise <i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Certificates <i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services <i class="fa-solid fa-caret-down"></i></a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- Right Links -->
+      <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+        <!-- Search Bar -->
+        <li class="nav-item">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </li>
+
+        <!-- Dark Mode Toggle -->
+        <li class="nav-item ms-3">
+          <a href="#" class="nav-link" id="toggleMode" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </a>
+        </li>
+
+        <!-- Other Icons -->
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa-solid fa-code"></i> Space</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> For Teachers</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Get Certified</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Top Section Starts -->
+<section id="body-content" class="text-center py-5" style="background-color: #D9EEE1;">
+  <div class="container">
+    <div class="main-head">
+      <h1 class="display-4 fw-bold">Learn to Code</h1>
+      <h3 class="mb-4">With the world's largest web development site.</h3>
       
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+      <div class="search-container d-flex justify-content-center align-items-center gap-2 flex-wrap">
+        <input type="text" class="form-control w-auto" placeholder="Search our tutorials, e.g. HTML" name="Search">
+        <button type="submit" class="btn btn-success">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <h4 class="mt-4">Not sure where to begin?</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Decorative SVG Divider -->
+<div class="svg">
+  <svg width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path id="wavepath" d="M0,0 L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+  </svg>
+</div>
+
+
+  <!-- HTML Section Starts -->
+<section id="html" class="container py-5">
+  <div class="row align-items-start">
+    <!-- Left Content -->
+    <div class="col-12 col-lg-6 mb-4">
+      <h1>HTML</h1>
+      <p>The language for building web pages</p>
+      <div class="d-grid gap-2">
+        <a href="#" class="text-decoration-none">
+          <button id="btn-A" class="btn btn-success w-50">Learn HTML</button>
+        </a>
+        <a href="#" class="text-decoration-none">
+          <button id="btn-B" class="btn btn-warning w-50">
+            Video Tutorial <span class="badge bg-danger text-white ms-2">New</span>
+          </button>
+        </a>
+        <a href="#" class="text-decoration-none">
+          <button id="btn-C" class="btn btn-secondary w-50">HTML References</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="col-12 col-lg-6">
+      <h3>HTML Example:</h3>
+      <div class="white-space p-3 bg-light border rounded">
+        <pre class="m-0" style="font-family: monospace;">
+        &lt;<span style="color:brown;">!DOCTYPE</span> <span style="color:red;">html</span>&gt;
+        &lt;<span style="color:brown;">html</span>&gt;
+        &lt;<span style="color:brown;">title</span>&gt;<span style="color:black;">HTML Tutorial</span>&lt;/<span style="color:brown;">title</span>&gt;
+        &lt;<span style="color:brown;">body</span>&gt;
+
+    &lt;<span style="color:brown;">h1</span>&gt;<span style="color:black;">This is heading</span>&lt;/<span style="color:brown;">h1</span>&gt;
+    &lt;<span style="color:brown;">p</span>&gt;<span style="color:black;">This is a paragraph.</span>&lt;/<span style="color:brown;">p</span>&gt;
+
+  &lt;/<span style="color:brown;">body</span>&gt;
+&lt;/<span style="color:brown;">html</span>&gt;
+        </pre>
+      </div>
+      <div class="btn-down mt-3">
+        <a href="#" class="text-decoration-none">
+          <button id="btn-down" class="btn btn-dark w-50">Try it Yourself</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--Section of CSS starts-->
+<!-- CSS Section Starts -->
+<section id="css" class="py-5" style="background-color: #FFF4A3;">
+  <div class="container">
+    <div class="row align-items-start">
+      <!-- Left Content -->
+      <div class="col-12 col-lg-6 mb-4">
+        <h1>CSS</h1>
+        <p>The language for styling web pages</p>
+        <div class="d-grid gap-2">
+          <a href="#" class="text-decoration-none">
+            <button id="btn-A" class="btn btn-success w-100">Learn CSS</button>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <button id="btn-C" class="btn btn-secondary w-100">CSS Reference</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-12 col-lg-6">
+        <h3>CSS Example:</h3>
+        <div class="white-space p-3 bg-white border rounded">
+          <pre class="m-0" style="font-family: monospace;">
+<span style="color:black;">body</span> {
+  <span style="color:red;">background-color:</span> <span style="color:mediumblue;">lightblue;</span>
+}
+
+<span style="color:black;">h1</span> {
+  <span style="color:red;">color:</span> <span style="color:mediumblue;">white;</span>
+  <span style="color:red;">text-align:</span> <span style="color:mediumblue;">center;</span>
+}
+          </pre>
+        </div>
+        <div class="btn-down mt-3">
+          <a href="#" class="text-decoration-none">
+            <button id="btn-down" class="btn btn-dark w-100">Try it Yourself</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Section Css ends-->
+
+<!-- JavaScript Section Starts -->
+<section id="javascript" class="py-5" style="background-color: #282A35; color: white;">
+  <div class="container">
+    <div class="row align-items-start">
+      <!-- Left Content -->
+      <div class="col-12 col-lg-6 mb-4">
+        <h1>JavaScript</h1>
+        <p>The language for programming web pages</p>
+        <div class="d-grid gap-2">
+          <a href="#" class="text-decoration-none">
+            <button id="btn-A" class="btn btn-success w-100">Learn JavaScript</button>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <button id="btn-B" class="btn btn-secondary w-100">JavaScript Reference</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-12 col-lg-6">
+        <h3>JavaScript Example:</h3>
+        <div class="white-space p-3 bg-white text-dark border rounded">
+          <pre class="m-0" style="font-family: monospace;">
+<span style="color:black;">function myFunction() {</span>
+  <span style="color:red;">document.getElementById("demo").innerHTML</span> = <span style="color:mediumblue;">"Hello JavaScript!";</span>
+<span style="color:black;">}</span>
+          </pre>
+        </div>
+        <div class="btn-down mt-3">
+          <a href="#" class="text-decoration-none">
+            <button id="btn-down" class="btn btn-light w-100">Try it Yourself</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Section Javascript ends-->
+<!--Section Python starts-->
+<section id="python" class="py-5" style="background-color:#F3ECEA;">
+  <div class="container">
+    <div class="row align-items-start">
+      <!-- Left Content -->
+      <div class="col-12 col-lg-6 mb-4">
+        <h1>Python</h1>
+        <p>A popular programming language</p>
+        <div class="d-grid gap-2">
+          <a href="#" class="text-decoration-none">
+            <button id="btn-A" class="btn btn-success w-100">Learn Python</button>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <button id="btn-C" class="btn btn-secondary w-100">Python Reference</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-12 col-lg-6">
+        <h3>Python Example:</h3>
+        <div class="white-space p-3 bg-white text-dark border rounded" style="font-family: monospace;">
+          <pre class="m-0">
+<span style="color: mediumblue;">if</span> <span style="color: red;">5</span> <span style="color: black;">></span> <span style="color: red;">2</span>:
+  <span style="color: black;">print(</span><span style="color: brown;">"Five is greater than two!"</span><span style="color: black;">)</span>
+          </pre>
+        </div>
+        <div class="btn-down mt-3">
+          <a href="#" class="text-decoration-none">
+            <button id="btn-down" class="btn btn-light w-100">Try it Yourself</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sql" class="py-5" style="background-color:#96D4D4;">
+  <div class="container">
+    <div class="row align-items-start">
+      <!-- Left Content -->
+      <div class="col-12 col-lg-6 mb-4">
+        <h1>SQL</h1>
+        <p>A language for accessing databases</p>
+        <div class="d-grid gap-2">
+          <a href="#" class="text-decoration-none">
+            <button id="btn-A" class="btn btn-success w-100">Learn SQL</button>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <button id="btn-C" class="btn btn-secondary w-100">SQL Reference</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-12 col-lg-6">
+        <h3>SQL Example:</h3>
+        <div class="white-space p-3 bg-white text-dark border rounded" style="font-family: monospace;">
+          <pre class="m-0">
+<span style="color:mediumblue;">SELECT</span> <span style="color:black;">*</span> <span style="color:mediumblue;">FROM</span> <span style="color:black;">Customers</span>
+<span style="color:mediumblue;">WHERE</span> Country = <span style="color:brown;">'Mexico'</span>;
+          </pre>
+        </div>
+        <div class="btn-down mt-3">
+          <a href="#" class="text-decoration-none">
+            <button id="btn-down" class="btn btn-light w-100">Try it Yourself</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Section Sql ends-->
+
+<!--Section Languages starts-->
+<section id="language" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Main Language Cards -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white text-center php">
+          <h2>PHP</h2>
+          <h5>A web server programming language</h5>
+          <button class="btn btn-success mt-2">Learn PHP</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white text-center jquery">
+          <h2>jQuery</h2>
+          <h5>A JS library for developing web pages</h5>
+          <button class="btn btn-success mt-2">Learn jQuery</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white text-center java">
+          <h2>Java</h2>
+          <h5>A programming language</h5>
+          <button class="btn btn-success mt-2">Learn Java</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white text-center cprogram">
+          <h2>C++</h2>
+          <h5>A programming language</h5>
+          <button class="btn btn-success mt-2">Learn C++</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white text-center css">
+          <h2>W3.CSS</h2>
+          <h5>A CSS framework for faster & better responsive web pages</h5>
+          <button class="btn btn-success mt-2">Learn W3.CSS</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white text-center bootstrap">
+          <h2>Bootstrap</h2>
+          <h5>A CSS framework for designing better web pages</h5>
+          <button class="btn btn-success mt-2">Learn Bootstrap</button>
+        </div>
+      </div>
+
+      <!-- Additional Topics -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded bg-pink text-center text-white">
+          <h5>C</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded bg-warning text-center text-dark">
+          <h5>C#</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded bg-success text-center text-white">
+          <h5>Excel</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded bg-info text-center text-white">
+          <h5>Google Sheets</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="p-3 border rounded bg-secondary text-center text-white">
+          <h5>Machine Learning</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="p-3 border rounded bg-dark text-center text-white">
+          <h5>Artificial Intelligence</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="p-3 border rounded bg-primary text-center text-white">
+          <h5>Statistics</h5>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="p-3 border rounded bg-danger text-center text-white">
+          <h5>Data Science</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Section Languages  ends-->
+<!--Section Color Design starts-->
+<!-- Section: Color Picker -->
+<section id="color" class="py-5 bg-light">
+  <div class="container text-center">
+    <div class="color-content">
+      <h2>Color Picker</h2>
+      <h4>W3Schools's famous color picker</h4>
+      <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_self">
+        <img src="uploads/colorpicker.png" class="img-fluid mt-3" alt="color picker" style="max-width: 150px;">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Section: Code Game -->
+<section id="codegame" class="py-5 bg-dark text-white text-center">
+  <div class="container codegame-contents">
+    <h1 class="mb-3">Code Game</h1>
+    <h2 class="mb-4">Help the Lynx to collect pine cones!</h2>
+    <a href="#">
+      <img src="uploads/w3lynx_200.png" class="img-fluid mb-4" alt="codegame image" style="max-width: 200px;">
+    </a>
+    <br>
+    <a href="https://www.w3schools.com/codegame/index.html">
+      <button id="btn-game" class="btn btn-warning">Play Game</button>
+    </a>
+  </div>
+</section>
+
+<!--Section code game ends-->
+<!-- section excercises and quizes starts -->
+<section id="exercises" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-3">Exercises and Quizzes</h2>
+    <h4 class="mb-4">Test your skills!</h4>
+
+    <div class="row justify-content-center">
+      <!-- Exercises Button -->
+      <div class="col-12 col-md-5 mb-3">
+        <a href="https://www.w3schools.com/exercises/index.php" class="btn btn-success w-100 py-3 rounded-pill text-white text-decoration-none">
+          Exercises
+        </a>
+      </div>
+
+      <!-- Quizzes Button -->
+      <div class="col-12 col-md-5 mb-3">
+        <a href="https://www.w3schools.com/quiztest/default.asp" class="btn btn-warning w-100 py-3 rounded-pill text-dark text-decoration-none">
+          Quizzes
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section excercises and quizes ends -->
+<!-- section web templates starts -->
+<section class="sec py-5 bg-light">
+  <div class="container text-center mb-5">
+    <!-- Web Template Section -->
+    <h2>Web Templates</h2>
+    <h4>Browse our selection of free responsive HTML Templates</h4>
+    <div class="my-4">
+      <a href="#">
+        <img src="uploads/w3css_templates.jpg" class="img-fluid rounded shadow" alt="W3.CSS Templates">
+      </a>
+    </div>
+    <a href="#" class="btn btn-dark px-4 py-2 rounded-pill">Browse Templates</a>
+  </div>
+
+  <!-- Course Panel -->
+  <div class="container text-center py-5 bg-success text-white rounded-3">
+    <h2 class="mb-2">Kickstart your career</h2>
+    <p class="mb-4">Get certified by completing a course</p>
+    <a href="#" class="btn btn-light text-success fw-bold mb-3">Get started</a>
+    <div class="d-flex justify-content-center flex-wrap align-items-center gap-3 mt-3">
+      <!-- SVG Arrow -->
+      <svg id="w3_cert_arrow" viewBox="0 0 170 143" fill="none" width="150" height="60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+        <path d="M159.804 93.8429L162.704 84.4917L152.715 80.8293" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <!-- SVG Badge -->
+      <svg id="w3_cert_badge" width="80" height="80" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <!-- Badge SVG code here (unchanged for brevity) -->
+      </svg>
+    </div>
+  </div>
+
+  <!-- How To Section -->
+  <section class="slideshow_section container text-center py-5">
+    <h2><b>How To Section</b></h2>
+    <h4>Code snippets for HTML, CSS and JavaScript</h4>
+    <h6 class="mb-4">For example, how to create a slideshow:</h6>
+
+    <div class="slideshow_main_container mx-auto position-relative" style="max-width: 700px;">
+      <!-- Slideshow -->
+      <div class="slideshow_container position-relative">
+        <div class="slide fade">
+          <div class="num_text">1 / 3</div>
+          <img src="uploads/img_mountains.jpg" class="img-fluid" alt="Mountain Image">
+          <div class="caption_text">Caption Text</div>
+        </div>
+        <div class="slide fade">
+          <div class="num_text">2 / 3</div>
+          <img src="uploads/img_nature.jpg" class="img-fluid" alt="Nature Image">
+          <div class="caption_text">Caption Two</div>
+        </div>
+        <div class="slide fade">
+          <div class="num_text">3 / 3</div>
+          <img src="uploads/img_snow.jpg" class="img-fluid" alt="Snow Image">
+          <div class="caption_text">Caption Three</div>
+        </div>
+
+        <!-- Arrows -->
+        <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- Dots -->
+      <div class="dot_group my-3">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class="stand_parent mt-4">
+      <div class="stand"></div>
+      <div class="stand2 mt-2">
+        <a href="https://www.w3schools.com/howto/default.asp" class="btn btn-primary rounded-pill px-4">LEARN HOW TO</a>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- How to section ends -->
+<!--Section footer starts-->
+<footer>
+  <div class="footer">
+    <div class="main-footer">
+      <div class="footer-left">
+        <a href="#" target="_blank"><button class="footerbtn courses">Courses</button></a>
+        <a href="#" target="_blank"><button class="footerbtn quizes">Quizzes</button></a>
+        <a href="#" target="_blank"><button class="footerbtn exercise">Exercises</button></a>
+        <a href="#" target="_blank"><button class="footerbtn pro">Pro</button></a>
+        <a href="#" target="_blank"><button class="footerbtn space">Spaces</button></a>
+      </div>
+      <div class="footer-right">
+        <div class="right-links">
+          <a href="#" class="head-1">Forem</a>
+          <a href="#" class="head-2">About</a>
+        </div>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <div class="content">
+      <p class="footer-paragraph">W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our <a href="#">terms of use, cookie, and privacy policy.</a></p>
+      <p class="footer-paragraph"><a href="#">Copyright 1999-2022</a> by Refsnes Data. All Rights Reserved.</p>
+    </div>
+    <div class="likebtn">
+      <a href="#"><i class="fa-solid fa-thumbs-up"></i></a>
+    </div>
+    <a href="#" class="end-btn">
+      <button id="btn-shop">
+        W3Schools Shop
+      </button>
+    </a>
+  </div>
+</footer>
+
+<!-- External Scripts -->
+<script src="script.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
+
+
+
+
