@@ -186,7 +186,7 @@ html, body {
 
 .search-container {
   position: relative;
-  left: 35%;
+  left: 0%;
   margin-top: 30px;
 }
 
@@ -230,6 +230,7 @@ html, body {
 /* Search container input and button styling */
 .search-container input[type="text"] {
   width: 30%;
+  height: 5%;
   padding: 14px;
   margin-top: 8px;
   font-size: 20px;
@@ -238,8 +239,9 @@ html, body {
 }
 
 .search-container button {
-  padding: 14px 35px;
-  margin-left: -90px;
+  padding: 14px 38px;
+  height: 5%;
+  margin-left: -30px;
   background: #04aa6d;
   color: #fff;
   font-size: 20px;
@@ -291,7 +293,8 @@ html, body {
 /* Button styles for Left content */
 #btn-A,
 #btn-B,
-#btn-C {
+#btn-C,
+#btn-D {
   padding: 12px 28px;
   font-weight: bold;
   font-size: 16px;
@@ -331,6 +334,14 @@ html, body {
   background-color: #1c1d22;
 }
 
+.left-content #btn-D {
+  background-color: palevioletred;
+  color: #000;
+}
+
+.left-content #btn-D:hover{
+  background-color:rgb(214, 59, 111);
+}
 /* Pink badge in Left content */
 .ws-pink {
   background-color: #ffc0c7;
@@ -694,7 +705,7 @@ html, body {
 
 /* Section exercise and quizzes design */
 #exercises {
-  background: url("../uploads/w3codes.png") center fixed;
+  background: url("w3codes.png") center fixed;
   width: 100%;
   height: auto;
 }
@@ -954,26 +965,15 @@ html, body {
 }
 
 .stand {
-  background-color: #282a35;
+  background-color: #28352d;
   height: 80px;
   top: 0;
   margin: auto;
   width: 50px;
 }
 
-.stand2 {
-  max-width: 379px;
-  height: 60px;
-  background-color: #282a35;
-  border-radius: 30px;
-  margin: auto;
-  padding-top: 17px;
-}
-
-.stand2 a {
-  text-decoration: none;
-  color: white;
-  font-size: 23px;
+.btn-primary{
+  background-color: #04aa6d;
 }
 
 /* Slideshow Container */
@@ -1063,378 +1063,85 @@ html, body {
 /* Section how to design ends */
 /*Footer design starts*/
 /* Footer Styling */
-footer {
-  background-color: #282a35;
-  width: 100%;
-  height: auto;
+.footer {
+  background-color: #1c1e26;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-/* Main Footer Layout */
-.main-footer {
+.footer-top {
   display: flex;
-  width: 100%;
-  padding: 40px 0 50px 30px;
-  flex-wrap: wrap; /* Ensure wrap for responsive design */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 
-/* Footer Left Section */
-.footer-left {
-  flex: 5;
-}
-
-.footer-left .footerbtn {
-  border: none;
-  background-color: #fff;
-  padding: 8px 16px;
-  border-radius: 5px;
-  margin-right: 10px;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.footer-left a {
+.footer-links a {
+  color: #ffc107;
   text-decoration: none;
-}
-
-/* Footer Right Section */
-.footer-right {
-  display: flex;
-  flex: 5;
-  font-size: 20px;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.right-links .head-1,
-.right-links .head-2 {
-  color: #fff;
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-.right-links .head-1 {
-  margin-right: 20px;
-}
-
-.right-links .head-2 {
-  margin-right: 20px;
-  border-left: 2px solid #fff;
-  padding-left: 20px;
-}
-
-.right-links .head-1:hover,
-.head-2:hover {
-  color: rgb(6, 123, 6);
-}
-
-.footer-right a {
-  text-decoration: none;
-}
-
-/* Social Links Section */
-.social-links {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 0 30px;
-}
-
-.social-links a {
-  color: #fff;
-  font-size: 24px;
-  margin-left: 10px;
-  border-radius: 5px;
-  padding: 10px 15px;
-}
-
-.social-links a:hover {
-  color: #000;
-  background-color: #fff;
-}
-
-/* Footer Paragraph */
-.footer-paragraph {
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-}
-
-/* Like Button Styling */
-.likebtn {
-  width: 100px;
-  margin: auto;
-  padding: 50px;
-}
-
-.likebtn .fa-thumbs-up {
-  font-size: 40px;
-  color: #fff;
-}
-
-.end-btn {
-  text-decoration: none;
-}
-
-/* Shop Button Styling */
-#btn-shop {
-  display: block;
-  margin: auto;
-  background-color: #04aa6d;
-  color: white;
-  font-size: 18px;
-  width: 50%;
-  text-transform: uppercase;
+  margin: 0 15px;
   font-weight: bold;
-  letter-spacing: 1px;
-  padding: 15px;
-  border-radius: 25px;
-  border: none;
 }
 
-#btn-shop:hover {
-  background-color: #04754c;
+.footer-links a:hover {
+  color: #04aa6d;
 }
 
-/* Responsive Design */
-@media (max-width: 1310px) {
-  .nav-links li .menu,
-  #btn,
-  .nav-links li .paid {
-    display: none;
-  }
-
-  .search-container {
-    position: relative;
-    left: 30%;
-  }
-
-  .search-container input[type="text"] {
-    width: 40%;
-  }
-
-  .col, .column-top, .column-bottom {
-    width: 100%;
-    height: auto;
-  }
-
-  .right-content {
-    padding-right: 10px;
-  }
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-@media (max-width: 1100px) {
-  .nav-links li .vid,
-  .pro {
-    display: none;
-  }
-
-  .search-container {
-    position: relative;
-    left: 25%;
-  }
-
-  .search-container input[type="text"] {
-    width: 50%;
-  }
-
-  .main-footer {
-    flex-direction: column;
-  }
-
-  .footer-left {
-    flex: 10;
-    display: block;
-    margin: auto;
-  }
-
-  .footer-left a .space,
-  .footer-right {
-    width: 60%;
-    display: block;
-    margin: auto;
-  }
-
-  .footer-right {
-    margin-top: 20px;
-  }
+.footer-columns div {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
 }
 
-@media (max-width: 900px) {
-  .nav-links li #web,
-  .tutorials,
-  .references,
-  .exercises {
-    display: none;
-  }
-
-  .nav-links li #menu {
-    display: inline;
-    margin-left: 30px;
-  }
-
-  .search-container {
-    position: relative;
-    left: 20%;
-  }
-
-  .search-container input[type="text"] {
-    width: 60%;
-  }
-
-  .white-space {
-    width: 93%;
-  }
+.footer-columns h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-@media (max-width: 767px) {
-  .left-exercises, .right-quizzes {
-    width: 100%;
-  }
+.footer-columns ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-@media (max-width: 600px) {
-  .nav-links .fa-circle-half-stroke {
-    display: none;
-  }
-
-  .right li a {
-    padding: 5px;
-  }
-
-  .search-container {
-    position: relative;
-    left: 10%;
-  }
-
-  .search-container input[type="text"] {
-    width: 80%;
-  }
-
-  ::placeholder {
-    font-size: 15px;
-  }
-
-  #language {
-    padding: 50px;
-  }
-
-  .right-content {
-    display: none;
-  }
-
-  .column-top, .column-bottom {
-    width: 100%;
-  }
+.footer-columns li {
+  margin: 5px 0;
+  color: #eee;
+  font-size: 14px;
 }
 
-@media (max-width: 480px) {
-  .right .fa-earth-americas,
-  .right .fa-magnifying-glass {
-    display: none;
-  }
-
-  .main-head h1 {
-    font-size: 50px;
-  }
-
-  .main-head h3 {
-    font-size: 18px;
-    padding: 10px;
-  }
-
-  .main-head h4 {
-    font-size: 20px;
-  }
-
-  #menu {
-    margin-left: -30px;
-  }
-
-  .row {
-    margin-right: 20px;
-  }
-
-  .left-content h1 {
-    font-size: 60px;
-  }
-
-  .column-top h5, .column-bottom h5 {
-    font-size: 25px;
-  }
-
-  .slideshow_main_container {
-    width: 100%;
-  }
-
-  .icondiv {
-    flex: 10%;
-  }
-
-  .urldiv p {
-    font-size: 13px;
-  }
-
-  .next, .previous {
-    padding: 5px 10px;
-  }
-
-  .footer-left a .pro {
-    width: 30%;
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.footer-social {
+  text-align: center;
+  margin: 30px 0;
 }
 
-@media (max-width: 400px) {
-  #menu {
-    margin-right: -25px;
-  }
+.footer-social a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+}
 
-  #btn-primary {
-    padding: 10px 20px;
-    margin-right: 5px;
-  }
+.footer-social a:hover {
+  color: #04aa6d;
+}
 
-  ::placeholder {
-    font-size: 13px;
-  }
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  max-width: 900px;
+  margin: auto;
+}
 
-  .left-content h1 {
-    font-size: 40px;
-  }
-
-  .column-top h5, .column-top h5 {
-    font-size: 20px;
-  }
-
-  .footer-left {
-    position: relative;
-  }
-
-  .footer-left a .pro {
-    position: absolute;
-    width: 35%;
-    top: 25%;
-    right: 15px;
-  }
-
-  .footer-left a .exercise {
-    display: block;
-    width: 50%;
-    margin-top: 20px;
-  }
-
-  .footer-left a .space {
-    width: 90%;
-  }
-
-  #btn-shop {
-    font-size: 13px;
-    width: 70%;
-  }
+.footer-bottom a {
+  color: #00d0ff;
+  text-decoration: none;
 }

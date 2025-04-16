@@ -87,9 +87,8 @@
     <div class="main-head">
       <h1 class="display-4 fw-bold">Learn to Code</h1>
       <h3 class="mb-4">With the world's largest web development site.</h3>
-      
-      <div class="search-container d-flex justify-content-center align-items-center gap-2 flex-wrap">
-        <input type="text" class="form-control w-auto" placeholder="Search our tutorials, e.g. HTML" name="Search">
+      <div class="search-container d-flex justify-content-center align-items-center flex-wrap">
+        <input type="text" placeholder="Search our tutorials, e.g. HTML" name="Search">
         <button type="submit" class="btn btn-success">
           <i class="fa fa-search"></i>
         </button>
@@ -109,209 +108,163 @@
 
 
   <!-- HTML Section Starts -->
-<section id="html" class="container py-5">
-  <div class="row align-items-start">
-    <!-- Left Content -->
-    <div class="col-12 col-lg-6 mb-4">
-      <h1>HTML</h1>
-      <p>The language for building web pages</p>
-      <div class="d-grid gap-2">
-        <a href="#" class="text-decoration-none">
-          <button id="btn-A" class="btn btn-success w-50">Learn HTML</button>
-        </a>
-        <a href="#" class="text-decoration-none">
-          <button id="btn-B" class="btn btn-warning w-50">
-            Video Tutorial <span class="badge bg-danger text-white ms-2">New</span>
+  <section id="html" style="padding: 60px 20px; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 50px;">
+    <div class="left-content" style="max-width: 500px; text-align: center;">
+      <h1 style="font-size: 48px; margin-bottom: 10px;">HTML</h1>
+      <p style="font-size: 18px; color: #555;">The language for building web pages</p>
+  
+      <a href="#" style="text-decoration: none;"><button id="btn-A" style="margin: 10px;">Learn HTML</button></a>
+      <a href="#" style="text-decoration: none;"><button id="btn-B" style="margin: 10px;">Video Tutorial</button></a>
+      <a href="#" style="text-decoration: none;"><button id="btn-C" style="margin: 10px;">HTML Reference</button></a>
+      <a href="#" style="text-decoration: none;"><button id="btn-D" style="margin: 10px;">Get Certified</button></a>
+
+    </div>
+  
+    <div class="right-content" style="max-width: 500px;">
+      <h3 style="margin-bottom: 15px;">HTML Example:</h3>
+      <div class="white-space first" style="background: #f5f5f5; padding: 20px; border-radius: 8px; font-family: monospace; color: #333;">
+        <p>&lt;<span style="color:brown">!DOCTYPE</span> <span style="color:red">html</span>&gt;</p>
+        <p>&lt;<span style="color:brown">html</span>&gt;</p>
+        <p>&lt;<span style="color:brown">title</span>&gt; <span style="color: #000;">HTML Tutorial</span> &lt;/<span style="color:brown">title</span>&gt;</p>
+        <p>&lt;<span style="color:brown">body</span>&gt;</p><br>
+        <p>&lt;<span style="color:brown;">h1</span>&gt;<span style="color: #000;">This is heading</span>&lt;/<span style="color:brown">h1</span>&gt;</p>
+        <p>&lt;<span style="color:brown;">p</span>&gt;<span style="color: #000;">This is paragraph.</span>&lt;/<span style="color:brown">p</span>&gt;</p><br>
+        <p>&lt;/<span style="color:brown">body</span>&gt;</p>
+        <p>&lt;/<span style="color:brown">html</span>&gt;</p>
+      </div>
+  
+      <div class="btn-down" style="margin-top: 20px; text-align: center;">
+        <a href="#">
+          <button id="btn-down" style="padding: 10px 20px; border: none; border-radius: 25px; background-color: #04aa6d; color: white; font-weight: bold; cursor: pointer;">
+            Try it Yourself
           </button>
         </a>
-        <a href="#" class="text-decoration-none">
-          <button id="btn-C" class="btn btn-secondary w-50">HTML References</button>
-        </a>
       </div>
     </div>
-
-    <!-- Right Content -->
-    <div class="col-12 col-lg-6">
-      <h3>HTML Example:</h3>
-      <div class="white-space p-3 bg-light border rounded">
-        <pre class="m-0" style="font-family: monospace;">
-        &lt;<span style="color:brown;">!DOCTYPE</span> <span style="color:red;">html</span>&gt;
-        &lt;<span style="color:brown;">html</span>&gt;
-        &lt;<span style="color:brown;">title</span>&gt;<span style="color:black;">HTML Tutorial</span>&lt;/<span style="color:brown;">title</span>&gt;
-        &lt;<span style="color:brown;">body</span>&gt;
-
-    &lt;<span style="color:brown;">h1</span>&gt;<span style="color:black;">This is heading</span>&lt;/<span style="color:brown;">h1</span>&gt;
-    &lt;<span style="color:brown;">p</span>&gt;<span style="color:black;">This is a paragraph.</span>&lt;/<span style="color:brown;">p</span>&gt;
-
-  &lt;/<span style="color:brown;">body</span>&gt;
-&lt;/<span style="color:brown;">html</span>&gt;
-        </pre>
-      </div>
-      <div class="btn-down mt-3">
-        <a href="#" class="text-decoration-none">
-          <button id="btn-down" class="btn btn-dark w-50">Try it Yourself</button>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+  
 
   <!--Section of CSS starts-->
 <!-- CSS Section Starts -->
-<section id="css" class="py-5" style="background-color: #FFF4A3;">
-  <div class="container">
-    <div class="row align-items-start">
-      <!-- Left Content -->
-      <div class="col-12 col-lg-6 mb-4">
-        <h1>CSS</h1>
-        <p>The language for styling web pages</p>
-        <div class="d-grid gap-2">
-          <a href="#" class="text-decoration-none">
-            <button id="btn-A" class="btn btn-success w-100">Learn CSS</button>
-          </a>
-          <a href="#" class="text-decoration-none">
-            <button id="btn-C" class="btn btn-secondary w-100">CSS Reference</button>
-          </a>
-        </div>
-      </div>
+<section id="css" style="padding: 60px 20px; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 50px; background-color: #FFF4A3;">
+  <div class="left-content" style="max-width: 500px; text-align: center;">
+    <h1 style="font-size: 48px; margin-bottom: 10px;">CSS</h1>
+    <p style="font-size: 18px; color: #555;">The language for styling web pages</p>
 
-      <!-- Right Content -->
-      <div class="col-12 col-lg-6">
-        <h3>CSS Example:</h3>
-        <div class="white-space p-3 bg-white border rounded">
-          <pre class="m-0" style="font-family: monospace;">
-<span style="color:black;">body</span> {
-  <span style="color:red;">background-color:</span> <span style="color:mediumblue;">lightblue;</span>
-}
+    <a href="#" style="text-decoration: none;"><button id="btn-A" style="margin: 10px;">Learn CSS</button></a>
+    <a href="#" style="text-decoration: none;"><button id="btn-C" style="margin: 10px;">CSS Reference</button></a>
+    <a href="#" style="text-decoration: none;"><button id="btn-D" style="margin: 10px;">Get Certified</button></a>
 
-<span style="color:black;">h1</span> {
-  <span style="color:red;">color:</span> <span style="color:mediumblue;">white;</span>
-  <span style="color:red;">text-align:</span> <span style="color:mediumblue;">center;</span>
-}
-          </pre>
-        </div>
-        <div class="btn-down mt-3">
-          <a href="#" class="text-decoration-none">
-            <button id="btn-down" class="btn btn-dark w-100">Try it Yourself</button>
-          </a>
-        </div>
-      </div>
+  </div>
+
+  <div class="right-content" style="max-width: 500px;">
+    <h3 style="margin-bottom: 15px;">CSS Example:</h3>
+    <div class="white-space first" style="background: #f5f5f5; padding: 20px; border-radius: 8px; font-family: monospace; color: #333;">
+      <p><span style="color:black;">body</span> {</p>
+      <p style="margin-left: 20px;"><span style="color:red;">background-color:</span> <span style="color:mediumblue;">lightblue;</span></p>
+      <p>}</p>
+      <br>
+      <p><span style="color:black;">h1</span> {</p>
+      <p style="margin-left: 20px;"><span style="color:red;">color:</span> <span style="color:mediumblue;">white;</span></p>
+      <p style="margin-left: 20px;"><span style="color:red;">text-align:</span> <span style="color:mediumblue;">center;</span></p>
+      <p>}</p>
+    </div>
+
+    <div class="btn-down" style="margin-top: 20px; text-align: center;">
+      <a href="#">
+        <button id="btn-down" style="padding: 10px 20px; border: none; border-radius: 25px; background-color: #04aa6d; color: white; font-weight: bold; cursor: pointer;">
+          Try it Yourself
+        </button>
+      </a>
     </div>
   </div>
 </section>
+
 
 <!--Section Css ends-->
 
 <!-- JavaScript Section Starts -->
-<section id="javascript" class="py-5" style="background-color: #282A35; color: white;">
-  <div class="container">
-    <div class="row align-items-start">
-      <!-- Left Content -->
-      <div class="col-12 col-lg-6 mb-4">
-        <h1>JavaScript</h1>
-        <p>The language for programming web pages</p>
-        <div class="d-grid gap-2">
-          <a href="#" class="text-decoration-none">
-            <button id="btn-A" class="btn btn-success w-100">Learn JavaScript</button>
-          </a>
-          <a href="#" class="text-decoration-none">
-            <button id="btn-B" class="btn btn-secondary w-100">JavaScript Reference</button>
-          </a>
-        </div>
-      </div>
+<section id="javascript" style="padding: 60px 20px; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 50px; background-color: #D9EEE1;">
+  <div class="left-content" style="max-width: 500px; text-align: center;">
+    <h1 style="font-size: 48px; margin-bottom: 10px;">JavaScript</h1>
+    <p style="font-size: 18px; color: #555;">The language for programming web pages</p>
 
-      <!-- Right Content -->
-      <div class="col-12 col-lg-6">
-        <h3>JavaScript Example:</h3>
-        <div class="white-space p-3 bg-white text-dark border rounded">
-          <pre class="m-0" style="font-family: monospace;">
-<span style="color:black;">function myFunction() {</span>
-  <span style="color:red;">document.getElementById("demo").innerHTML</span> = <span style="color:mediumblue;">"Hello JavaScript!";</span>
-<span style="color:black;">}</span>
-          </pre>
-        </div>
-        <div class="btn-down mt-3">
-          <a href="#" class="text-decoration-none">
-            <button id="btn-down" class="btn btn-light w-100">Try it Yourself</button>
-          </a>
-        </div>
-      </div>
+    <a href="#" style="text-decoration: none;"><button id="btn-A" style="margin: 10px;">Learn JavaScript</button></a>
+    <a href="#" style="text-decoration: none;"><button id="btn-B" style="margin: 10px;">Video Tutorial</button></a>
+    <a href="#" style="text-decoration: none;"><button id="btn-C" style="margin: 10px;">JavaScript Reference</button></a>
+  </div>
+
+  <div class="right-content" style="max-width: 500px;">
+    <h3 style="margin-bottom: 15px;">JavaScript Example:</h3>
+    <div class="white-space first" style="background: #f5f5f5; padding: 20px; border-radius: 8px; font-family: monospace; color: #333;">
+      <p><span style="color:mediumblue;">document</span>.getElementById(<span style="color:brown;">"demo"</span>).innerHTML = <span style="color:brown;">"Hello JavaScript!";</span></p>
+    </div>
+
+    <div class="btn-down" style="margin-top: 20px; text-align: center;">
+      <a href="#">
+        <button id="btn-down" style="padding: 10px 20px; border: none; border-radius: 25px; background-color: #04aa6d; color: white; font-weight: bold; cursor: pointer;">
+          Try it Yourself
+        </button>
+      </a>
     </div>
   </div>
 </section>
 
 <!--Section Javascript ends-->
 <!--Section Python starts-->
-<section id="python" class="py-5" style="background-color:#F3ECEA;">
-  <div class="container">
-    <div class="row align-items-start">
-      <!-- Left Content -->
-      <div class="col-12 col-lg-6 mb-4">
-        <h1>Python</h1>
-        <p>A popular programming language</p>
-        <div class="d-grid gap-2">
-          <a href="#" class="text-decoration-none">
-            <button id="btn-A" class="btn btn-success w-100">Learn Python</button>
-          </a>
-          <a href="#" class="text-decoration-none">
-            <button id="btn-C" class="btn btn-secondary w-100">Python Reference</button>
-          </a>
-        </div>
-      </div>
+<section id="python" style="padding: 60px 20px; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 50px; background-color: #F3ECEA;">
+  <div class="left-content" style="max-width: 500px; text-align: center;">
+    <h1 style="font-size: 48px; margin-bottom: 10px;">Python</h1>
+    <p style="font-size: 18px; color: #555;">A popular programming language</p>
 
-      <!-- Right Content -->
-      <div class="col-12 col-lg-6">
-        <h3>Python Example:</h3>
-        <div class="white-space p-3 bg-white text-dark border rounded" style="font-family: monospace;">
-          <pre class="m-0">
-<span style="color: mediumblue;">if</span> <span style="color: red;">5</span> <span style="color: black;">></span> <span style="color: red;">2</span>:
-  <span style="color: black;">print(</span><span style="color: brown;">"Five is greater than two!"</span><span style="color: black;">)</span>
-          </pre>
-        </div>
-        <div class="btn-down mt-3">
-          <a href="#" class="text-decoration-none">
-            <button id="btn-down" class="btn btn-light w-100">Try it Yourself</button>
-          </a>
-        </div>
-      </div>
+    <a href="#" style="text-decoration: none;"><button id="btn-A" style="margin: 10px;">Learn Python</button></a>
+    <a href="#" style="text-decoration: none;"><button id="btn-B" style="margin: 10px;">Video Tutorial</button></a>
+    <a href="#" style="text-decoration: none;"><button id="btn-C" style="margin: 10px;">Python Reference</button></a>
+  </div>
+
+  <div class="right-content" style="max-width: 500px;">
+    <h3 style="margin-bottom: 15px;">Python Example:</h3>
+    <div class="white-space first" style="background: #f5f5f5; padding: 20px; border-radius: 8px; font-family: monospace; color: #333;">
+      <p><span style="color:blue;">print</span>(<span style="color:brown;">"Hello, World!"</span>)</p>
+    </div>
+
+    <div class="btn-down" style="margin-top: 20px; text-align: center;">
+      <a href="#">
+        <button id="btn-down" style="padding: 10px 20px; border: none; border-radius: 25px; background-color: #04aa6d; color: white; font-weight: bold; cursor: pointer;">
+          Try it Yourself
+        </button>
+      </a>
     </div>
   </div>
 </section>
-<section id="sql" class="py-5" style="background-color:#96D4D4;">
-  <div class="container">
-    <div class="row align-items-start">
-      <!-- Left Content -->
-      <div class="col-12 col-lg-6 mb-4">
-        <h1>SQL</h1>
-        <p>A language for accessing databases</p>
-        <div class="d-grid gap-2">
-          <a href="#" class="text-decoration-none">
-            <button id="btn-A" class="btn btn-success w-100">Learn SQL</button>
-          </a>
-          <a href="#" class="text-decoration-none">
-            <button id="btn-C" class="btn btn-secondary w-100">SQL Reference</button>
-          </a>
-        </div>
-      </div>
 
-      <!-- Right Content -->
-      <div class="col-12 col-lg-6">
-        <h3>SQL Example:</h3>
-        <div class="white-space p-3 bg-white text-dark border rounded" style="font-family: monospace;">
-          <pre class="m-0">
-<span style="color:mediumblue;">SELECT</span> <span style="color:black;">*</span> <span style="color:mediumblue;">FROM</span> <span style="color:black;">Customers</span>
-<span style="color:mediumblue;">WHERE</span> Country = <span style="color:brown;">'Mexico'</span>;
-          </pre>
-        </div>
-        <div class="btn-down mt-3">
-          <a href="#" class="text-decoration-none">
-            <button id="btn-down" class="btn btn-light w-100">Try it Yourself</button>
-          </a>
-        </div>
-      </div>
+<!--SQL section starts-->
+<section id="sql" style="padding: 60px 20px; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 50px; background-color: #D9EEE1;">
+  <div class="left-content" style="max-width: 500px; text-align: center;">
+    <h1 style="font-size: 48px; margin-bottom: 10px;">SQL</h1>
+    <p style="font-size: 18px; color: #555;">A language for accessing databases</p>
+
+    <a href="#" style="text-decoration: none;"><button id="btn-A" style="margin: 10px;">Learn SQL</button></a>
+    <a href="#" style="text-decoration: none;"><button id="btn-B" style="margin: 10px;">Video Tutorial </button></a>
+    <a href="#" style="text-decoration: none;"><button id="btn-C" style="margin: 10px;">SQL Reference</button></a>
+  </div>
+
+  <div class="right-content" style="max-width: 500px;">
+    <h3 style="margin-bottom: 15px;">SQL Example:</h3>
+    <div class="white-space first" style="background: #f5f5f5; padding: 20px; border-radius: 8px; font-family: monospace; color: #333;">
+      <p><span style="color:blue;">SELECT</span> * <span style="color:blue;">FROM</span> Customers <span style="color:blue;">WHERE</span> Country = <span style="color:brown;">'Mexico'</span>;</p>
+    </div>
+
+    <div class="btn-down" style="margin-top: 20px; text-align: center;">
+      <a href="#">
+        <button id="btn-down" style="padding: 10px 20px; border: none; border-radius: 25px; background-color: #04aa6d; color: white; font-weight: bold; cursor: pointer;">
+          Try it Yourself
+        </button>
+      </a>
     </div>
   </div>
 </section>
+
 
 <!--Section Sql ends-->
 
@@ -536,7 +489,6 @@
 
     <div class="stand_parent mt-4">
       <div class="stand"></div>
-      <div class="stand2 mt-2">
         <a href="https://www.w3schools.com/howto/default.asp" class="btn btn-primary rounded-pill px-4">LEARN HOW TO</a>
       </div>
     </div>
@@ -545,43 +497,107 @@
 
 <!-- How to section ends -->
 <!--Section footer starts-->
-<footer>
-  <div class="footer">
-    <div class="main-footer">
-      <div class="footer-left">
-        <a href="#" target="_blank"><button class="footerbtn courses">Courses</button></a>
-        <a href="#" target="_blank"><button class="footerbtn quizes">Quizzes</button></a>
-        <a href="#" target="_blank"><button class="footerbtn exercise">Exercises</button></a>
-        <a href="#" target="_blank"><button class="footerbtn pro">Pro</button></a>
-        <a href="#" target="_blank"><button class="footerbtn space">Spaces</button></a>
-      </div>
-      <div class="footer-right">
-        <div class="right-links">
-          <a href="#" class="head-1">Forem</a>
-          <a href="#" class="head-2">About</a>
-        </div>
-      </div>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <h2><img src="uploads/logo.png" width="50" height="50" alt="logo"></h2>
     </div>
-    <div class="social-links">
-      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-square"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+    <div class="footer-links">
+      <a href="#">PLUS</a>
+      <a href="#">SPACES</a>
+      <a href="#">GET CERTIFIED</a>
+      <a href="#">FOR TEACHERS</a>
+      <a href="#">FOR BUSINESS</a>
+      <a href="#">CONTACT US</a>
     </div>
-    <div class="content">
-      <p class="footer-paragraph">W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our <a href="#">terms of use, cookie, and privacy policy.</a></p>
-      <p class="footer-paragraph"><a href="#">Copyright 1999-2022</a> by Refsnes Data. All Rights Reserved.</p>
+  </div>
+
+  <div class="footer-columns">
+    <div>
+      <h4>Top Tutorials</h4>
+      <ul>
+        <li>HTML Tutorial</li>
+        <li>CSS Tutorial</li>
+        <li>JavaScript Tutorial</li>
+        <li>How To Tutorial</li>
+        <li>SQL Tutorial</li>
+        <li>Python Tutorial</li>
+        <li>W3.CSS Tutorial</li>
+        <li>Bootstrap Tutorial</li>
+        <li>PHP Tutorial</li>
+        <li>Java Tutorial</li>
+        <li>C++ Tutorial</li>
+        <li>jQuery Tutorial</li>
+      </ul>
     </div>
-    <div class="likebtn">
-      <a href="#"><i class="fa-solid fa-thumbs-up"></i></a>
+    <div>
+      <h4>Top References</h4>
+      <ul>
+        <li>HTML Reference</li>
+        <li>CSS Reference</li>
+        <li>JavaScript Reference</li>
+        <li>SQL Reference</li>
+        <li>Python Reference</li>
+        <li>W3.CSS Reference</li>
+        <li>Bootstrap Reference</li>
+        <li>PHP Reference</li>
+        <li>HTML Colors</li>
+        <li>Java Reference</li>
+        <li>Angular Reference</li>
+        <li>jQuery Reference</li>
+      </ul>
     </div>
-    <a href="#" class="end-btn">
-      <button id="btn-shop">
-        W3Schools Shop
-      </button>
-    </a>
+    <div>
+      <h4>Top Examples</h4>
+      <ul>
+        <li>HTML Examples</li>
+        <li>CSS Examples</li>
+        <li>JavaScript Examples</li>
+        <li>How To Examples</li>
+        <li>SQL Examples</li>
+        <li>Python Examples</li>
+        <li>W3.CSS Examples</li>
+        <li>Bootstrap Examples</li>
+        <li>PHP Examples</li>
+        <li>Java Examples</li>
+        <li>XML Examples</li>
+        <li>jQuery Examples</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get Certified</h4>
+      <ul>
+        <li>HTML Certificate</li>
+        <li>CSS Certificate</li>
+        <li>JavaScript Certificate</li>
+        <li>Front End Certificate</li>
+        <li>SQL Certificate</li>
+        <li>Python Certificate</li>
+        <li>PHP Certificate</li>
+        <li>jQuery Certificate</li>
+        <li>Java Certificate</li>
+        <li>C++ Certificate</li>
+        <li>C# Certificate</li>
+        <li>XML Certificate</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-social">
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="#"><i class="fa-brands fa-discord"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</p>
+    <p>While using W3Schools, you agree to have read and accepted our <a href="#">terms of use, cookie and privacy policy.</a></p>
+    <p><a href="#">Copyright 1999-2025</a> by Refsnes Data. All Rights Reserved. <a href="#">W3Schools is Powered by W3.CSS.</a></p>
   </div>
 </footer>
+
 
 <!-- External Scripts -->
 <script src="script.js"></script>
