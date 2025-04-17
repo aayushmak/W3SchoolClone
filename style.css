@@ -335,12 +335,12 @@ html, body {
 }
 
 .left-content #btn-D {
-  background-color: palevioletred;
+  background-color: pink;
   color: #000;
 }
 
 .left-content #btn-D:hover{
-  background-color:rgb(214, 59, 111);
+  background-color:palevioletred;
 }
 /* Pink badge in Left content */
 .ws-pink {
@@ -386,7 +386,7 @@ html, body {
   }
 
   /* Adjust button sizes in left content */
-  #btn-A, #btn-B, #btn-C {
+  #btn-A, #btn-B, #btn-C, #btn-D {
     padding: 10px 20px;
     font-size: 14px;
   }
