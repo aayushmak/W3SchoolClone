@@ -60,6 +60,45 @@ html, body {
   display: inline;
 }
 
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  background-color: #d9f4ea; /* light mint background */
+  border-radius: 30px;
+  padding: 4px;
+  margin-left: auto; /* pushes buttons to the right in flex container */
+}
+
+.btn-signup {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px 0 0 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-login {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 0 30px 30px 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-signup:hover {
+  background-color: #059862;
+}
+
+.btn-login:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 /* Dark mode styles */
 .dark-mode {
   background-color: #121212;
@@ -76,6 +115,31 @@ html, body {
 
 .navbar-light .navbar-nav .nav-link {
   color: #000;
+}
+
+.second-navbar {
+  background-color: #282A35;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 8px 0;
+  position: fixed;
+  top: 66px; /* Adjust if your top navbar is taller/shorter */
+  width: 100%;
+  z-index: 999;
+}
+
+.second-navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.second-navbar a:hover {
+  background-color: #000;
+  border-radius: 4px;
 }
 
 /* Button styles */
@@ -226,22 +290,19 @@ html, body {
   }
 }
 
-
-/* Search container input and button styling */
 .search-container input[type="text"] {
   width: 30%;
-  height: 5%;
   padding: 14px;
   margin-top: 8px;
   font-size: 20px;
   border: none;
-  border-radius: 25px;
+  border-radius: 25px 0 0 25px;
 }
 
 .search-container button {
   padding: 14px 38px;
-  height: 5%;
-  margin-left: -30px;
+  margin-top: 8px;
+  margin-left: -5px; /* Adjusted from -30px to avoid overlap */
   background: #04aa6d;
   color: #fff;
   font-size: 20px;
